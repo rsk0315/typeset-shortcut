@@ -1,4 +1,4 @@
-tsc --downlevelIteration src/*.ts
+npx webpack >&2
 
 cat <<EOF
 <html>
@@ -6,12 +6,9 @@ cat <<EOF
     <meta charset="UTF-8">
     <script>
 
-exports = {};
 EOF
 
-cat src/{fonts,typeset,base64}.js \
-    | grep -Ev '^//' \
-    | sed -E 's/= require(.*)/= exports/'
+cat build/bundle.js | grep -Ev '^//' 
 
 cat <<EOF
 
