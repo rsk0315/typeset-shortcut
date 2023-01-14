@@ -30,7 +30,7 @@ const selectFont = (str: string, font: FontType): string => {
     const chars = [...str].map((ch) => {
       switch (font) {
         case FontType.Regular:
-          return ch;
+          return /[a-z]/i.test(ch) ? MATH_ITALIC[ch] : ch;
         case FontType.Superscript:
           return SUPERSCRIPTS[ch];
         case FontType.Subscript:
@@ -58,7 +58,7 @@ const compositeFont = (lhs: FontType, rhs: FontType): FontType => {
 };
 
 export const typeset = (expr: string): string => {
-  const tokens = /\\[a-zA-Z]+|\\.|\^|_|\{|\}|\s+|./g;
+  const tokens = /\$|\\[a-zA-Z]+|\\.|\^|_|\{|\}|\s+|./g;
 
   let res = "";
   let mode: FontType[] = [FontType.Regular];
@@ -68,7 +68,10 @@ export const typeset = (expr: string): string => {
   while ((m = tokens.exec(expr))) {
     const token = m[0];
 
-    if (token.trim() === "") continue;
+    if (token.trim() === "") {
+      res += token;
+      continue;
+    }
 
     switch (token[0]) {
       case "^":
