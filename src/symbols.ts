@@ -2519,6 +2519,7 @@ const symbolAliases = [
   ["ge", "geq"],
   ["implies", "Rightarrow"],
   ["impliedby", "Leftarrow"],
+  ["iff", "Leftrightarrow"],
   ["dots", "unicodeellipsis"], // :(
   ["cdots", "unicodecdots"],
   ["ldots", "unicodeellipsis"],
