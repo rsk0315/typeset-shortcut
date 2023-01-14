@@ -2523,6 +2523,13 @@ const symbolAliases = [
   ["dots", "unicodeellipsis"], // :(
   ["cdots", "unicodecdots"],
   ["ldots", "unicodeellipsis"],
+  ["C", "BbbC"],
+  ["R", "BbbR"],
+  ["Q", "BbbQ"],
+  ["Z", "BbbZ"],
+  ["N", "BbbN"],
+  ["F", "BbbF"],
+  ["K", "BbbK"],
 ].map(([alias, old]) => [alias, symbolsObject[old]]) as [string, string][];
 
 export const symbols: Map<string, string> = new Map([
