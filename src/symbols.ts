@@ -1,4 +1,6 @@
 // cat resources/symbols.txt | tr -d \\\\\" | awk '$0=$2": \"\\u{"$1"}\", "'
+//
+// See also <https://tex.stackexchange.com/a/168129>
 
 const symbolsObject: { [key: string]: string } = {
   mathexclam: "\u{00021}",
