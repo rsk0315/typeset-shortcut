@@ -2509,14 +2509,20 @@ const mupGreeks: string[] = [
 
 const upGreeks: string[] = ["Digamma", "digamma", "backepsilon"];
 
-const greekAliases: [string, string][] = [
-  ...mupGreeks.map((e) => [e, symbolsObject[`mup${e}`]] as [string, string]),
-  ...upGreeks.map((e) => [e, symbolsObject[`up${e}`]] as [string, string]),
-];
+const greekAliases = [
+  ...mupGreeks.map((e) => [e, symbolsObject[`mup${e}`]]),
+  ...upGreeks.map((e) => [e, symbolsObject[`up${e}`]]),
+] as [string, string][];
+
+const symbolAliases = [
+  ["le", "leq"],
+  ["ge", "geq"],
+  ["implies", "Rightarrow"],
+  ["impliedby", "Leftarrow"],
+].map(([alias, old]) => [alias, symbolsObject[old]]) as [string, string][];
 
 export const symbols: Map<string, string> = new Map([
   ...Object.entries(symbolsObject),
   ...greekAliases,
-  ["le", symbolsObject.leq],
-  ["ge", symbolsObject.geq],
+  ...symbolAliases,
 ]);
