@@ -8,7 +8,7 @@ cat <<EOF
 
 EOF
 
-cat build/bundle.js | grep -Ev '^//' 
+cat build/bundle.js | grep -Ev '^\s*//' 
 
 cat <<EOF
 
