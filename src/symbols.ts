@@ -2519,6 +2519,9 @@ const symbolAliases = [
   ["ge", "geq"],
   ["implies", "Rightarrow"],
   ["impliedby", "Leftarrow"],
+  ["dots", "unicodeellipsis"], // :(
+  ["cdots", "unicodecdots"],
+  ["ldots", "unicodeellipsis"],
 ].map(([alias, old]) => [alias, symbolsObject[old]]) as [string, string][];
 
 export const symbols: Map<string, string> = new Map([
