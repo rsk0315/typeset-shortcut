@@ -1,6 +1,6 @@
-// cat resources/symbols.txt | tr -d \\\\\" | awk '$1 && $0=$2": \"\\u{"$1"}\", "'
+// cat resources/symbols.txt | tr -d \\\\\" | awk '$0=$2": \"\\u{"$1"}\", "'
 
-export const SYMBOLS: { [key: string]: string } = {
+const symbolsObject: { [key: string]: string } = {
   mathexclam: "\u{00021}",
   mathoctothorpe: "\u{00023}",
   mathdollar: "\u{00024}",
@@ -347,6 +347,8 @@ export const SYMBOLS: { [key: string]: string } = {
   smallsetminus: "\u{02216}",
   ast: "\u{02217}",
   vysmwhtcircle: "\u{02218}",
+  sqrt: "\u{0221A}",
+  surd: "\u{0221A}",
   cuberoot: "\u{0221B}",
   fourthroot: "\u{0221C}",
   propto: "\u{0221D}",
@@ -2445,3 +2447,76 @@ export const SYMBOLS: { [key: string]: string } = {
   arabicmaj: "\u{1EEF0}",
   arabichad: "\u{1EEF1}",
 };
+
+const mupGreeks: string[] = [
+  "Alpha",
+  "Beta",
+  "Gamma",
+  "Delta",
+  "Epsilon",
+  "Zeta",
+  "Eta",
+  "Theta",
+  "Iota",
+  "Kappa",
+  "Lambda",
+  "Mu",
+  "Nu",
+  "Xi",
+  "Omicron",
+  "Pi",
+  "Rho",
+  "Sigma",
+  "Tau",
+  "Upsilon",
+  "Phi",
+  "Chi",
+  "Psi",
+  "Omega",
+  "alpha",
+  "beta",
+  "gamma",
+  "delta",
+  "varepsilon",
+  "zeta",
+  "eta",
+  "theta",
+  "iota",
+  "kappa",
+  "lambda",
+  "mu",
+  "nu",
+  "xi",
+  "omicron",
+  "pi",
+  "rho",
+  "varsigma",
+  "sigma",
+  "tau",
+  "upsilon",
+  "varphi",
+  "chi",
+  "psi",
+  "omega",
+  "vartheta",
+  "phi",
+  "varpi",
+  "varkappa",
+  "varrho",
+  "varTheta",
+  "epsilon",
+];
+
+const upGreeks: string[] = ["Digamma", "digamma", "backepsilon"];
+
+const greekAliases: [string, string][] = [
+  ...mupGreeks.map((e) => [e, symbolsObject[`mup${e}`]] as [string, string]),
+  ...upGreeks.map((e) => [e, symbolsObject[`up${e}`]] as [string, string]),
+];
+
+export const symbols: Map<string, string> = new Map([
+  ...Object.entries(symbolsObject),
+  ...greekAliases,
+  ["le", symbolsObject.leq],
+  ["ge", symbolsObject.geq],
+]);

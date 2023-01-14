@@ -100,7 +100,6 @@
 "003C0 \muppi
 "003C1 \muprho
 "003C2 \mupvarsigma
-
 "003C3 \mupsigma
 "003C4 \muptau
 "003C5 \mupupsilon
@@ -203,7 +202,6 @@
 "02138 \daleth
 "0213C \Bbbpi
 "0213D \Bbbgamma
-
 "0213E \BbbGamma
 "0213F \BbbPi
 "02140 \Bbbsum
@@ -306,7 +304,6 @@
 "021E5 \rightarrowbar
 "021E6 \leftwhitearrow
 "021E7 \upwhitearrow
-
 "021E8 \rightwhitearrow
 "021E9 \downwhitearrow
 "021EA \whitearrowupfrombar
@@ -346,7 +343,10 @@
 "02215 \divslash
 "02216 \smallsetminus
 "02217 \ast
-"02218 \vysmwhtcircle "02219 \vysmblkcircle "0221A \sqrt √ "0221A \surd
+"02218 \vysmwhtcircle
+"02219 \vysmblkcircle
+"0221A \sqrt
+"0221A \surd
 "0221B \cuberoot
 "0221C \fourthroot
 "0221D \propto
@@ -406,7 +406,6 @@
 "02251 \Doteq
 "02252 \fallingdotseq
 "02253 \risingdotseq
-
 "02254 \coloneq
 "02255 \eqcolon
 "02256 \eqcirc
@@ -509,7 +508,6 @@
 "022B7 \imageof
 "022B8 \multimap
 "022B9 \hermitmatrix
-
 "022BA \intercal
 "022BB \veebar
 "022BC \barwedge
@@ -612,7 +610,6 @@
 "02370 \APLboxquestion
 "0237C \rangledownzigzagarrow
 "02394 \hexagon
-
 "0239B \lparenuend
 "0239C \lparenextender
 "0239D \lparenlend
@@ -715,7 +712,6 @@
 "025CC \dottedcircle
 "025CD \circlevertfill
 "025CE \bullseye
-
 "025CF \mdlgblkcircle
 "025D0 \circlelefthalfblack
 "025D1 \circlerighthalfblack
@@ -818,7 +814,6 @@
 "027C2 \perp
 "027C3 \subsetcirc
 "027C4 \supsetcirc
-
 "027C5 \lbag
 "027C6 \rbag
 "027C7 \veedot
@@ -921,7 +916,6 @@
 "0292D \seovnearrow
 "0292E \neovsearrow
 "0292F \fdiagovnearrow
-
 "02930 \rdiagovsearrow
 "02931 \neovnwarrow
 "02932 \nwovnearrow
@@ -1024,7 +1018,6 @@
 "02993 \lparenless
 "02994 \rparengtr
 "02995 \Lparengtr
-
 "02996 \Rparenless
 "02997 \lblkbrbrak
 "02998 \rblkbrbrak
@@ -1127,7 +1120,6 @@
 "029F9 \xbsol
 "029FA \doubleplus
 "029FB \tripleplus
-
 "029FC \lcurvyangle
 "029FD \rcurvyangle
 "029FE \tplus
@@ -1230,7 +1222,6 @@
 "02A5F \wedgebar
 "02A60 \wedgedoublebar
 "02A61 \varveebar
-
 "02A62 \doublebarvee
 "02A63 \veedoublebar
 "02A64 \dsub
@@ -1333,7 +1324,6 @@
 "02AC5 \subseteqq
 "02AC6 \supseteqq
 "02AC7 \subsim
-
 "02AC8 \supsim
 "02AC9 \subsetapprox
 "02ACA \supsetapprox
@@ -1436,7 +1426,6 @@
 "02B3D \nVtwoheadleftarrowtail
 "02B3E \leftarrowx
 "02B3F \leftcurvedarrow
-
 "02B40 \equalleftarrow
 "02B41 \bsimilarleftarrow
 "02B42 \leftarrowbackapprox
@@ -1539,7 +1528,6 @@
 "1D44F \mitb
 "1D450 \mitc
 "1D451 \mitd
-
 "1D452 \mite
 "1D453 \mitf
 "1D454 \mitg
@@ -1642,7 +1630,6 @@
 "1D4C0 \mscrk
 "1D4C1 \mscrl
 "1D4C2 \mscrm
-
 "1D4C3 \mscrn
 "1D4C5 \mscrp
 "1D4C6 \mscrq
@@ -1745,7 +1732,6 @@
 "1D52C \mfrako
 "1D52D \mfrakp
 "1D52E \mfrakq
-
 "1D52F \mfrakr
 "1D530 \mfraks
 "1D531 \mfrakt
@@ -1848,7 +1834,6 @@
 "1D599 \mbffrakt
 "1D59A \mbffraku
 "1D59B \mbffrakv
-
 "1D59C \mbffrakw
 "1D59D \mbffrakx
 "1D59E \mbffraky
@@ -1951,7 +1936,6 @@
 "1D5FF \mbfsansr
 "1D600 \mbfsanss
 "1D601 \mbfsanst
-
 "1D602 \mbfsansu
 "1D603 \mbfsansv
 "1D604 \mbfsansw
@@ -2054,7 +2038,6 @@
 "1D665 \mbfitsansp
 "1D666 \mbfitsansq
 "1D667 \mbfitsansr
-
 "1D668 \mbfitsanss
 "1D669 \mbfitsanst
 "1D66A \mbfitsansu
@@ -2157,7 +2140,6 @@
 "1D6CD \mbfmu
 "1D6CE \mbfnu
 "1D6CF \mbfxi
-
 "1D6D0 \mbfomicron
 "1D6D1 \mbfpi
 "1D6D2 \mbfrho
@@ -2260,7 +2242,6 @@
 "1D733 \mbfitPsi
 "1D734 \mbfitOmega
 "1D735 \mbfitnabla
-
 "1D736 \mbfitalpha
 "1D737 \mbfitbeta
 "1D738 \mbfitgamma
@@ -2363,7 +2344,6 @@
 "1D799 \mbfitsansKappa
 "1D79A \mbfitsansLambda
 "1D79B \mbfitsansMu
-
 "1D79C \mbfitsansNu
 "1D79D \mbfitsansXi
 "1D79E \mbfitsansOmicron
